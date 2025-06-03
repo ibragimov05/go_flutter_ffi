@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
     try {
       final num1 = int.tryParse(_num1Controller.text) ?? 0;
       final num2 = int.tryParse(_num2Controller.text) ?? 0;
-      
+
       final result = NativeBridge.addTwoNumbers(a: num1, b: num2);
 
       setState(() => _additionResult = '$num1 + $num2 = $result');
