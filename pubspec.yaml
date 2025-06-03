@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  ffi: ^2.1.4
+  path: ^1.9.1
 
 dev_dependencies:
   flutter_test:

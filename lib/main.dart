@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+import 'home_screen.dart';
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+void main() => runApp(const App());
+
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+    title: 'Flutter Go FFI Bridge',
+    theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
+    home: const HomeScreen(),
+  );
 }
